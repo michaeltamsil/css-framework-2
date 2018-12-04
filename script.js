@@ -24,4 +24,10 @@ $(function() {
             alert('not yet choose')
         }     
     })
+
+    $('[name="addText"]').click( event => {
+        let length = $("#addedtext > p").length;
+        let DOM = $(`<p>this text is added ke ${++length}</p>`);
+        $("#addedtext").append(DOM);
+    });
 });

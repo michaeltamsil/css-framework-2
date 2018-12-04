@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Framework 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <button id="askme" class="btn btn-primary">Ask me</button>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                I wan to learn
+                <br>
+                <label>
+                    <input type="checkbox" name="selectAll">Select All
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="answer1" value="Reactjs">Reactjs
+                </label>
+                <label>
+                    <input type="checkbox" name="answer1" value="React Native">React Native
+                </label>
+                <label>
+                    <input type="checkbox" name="answer1" value="Nodejs">Nodejs
+                </label>
+                <br>
+                <button class="btn btn-primary" name="showresult">show result</button>
+            </div>
+        </div>
+
+        <div class="card text-white bg-success mb-3 mt-4" style="max-width: 18rem;">
+            <div class="card-header">Congratulation</div>
+            <div class="card-body">
+                <h5 class="card-title">Success</h5>
+                <p class="card-text">You have talent as web designer.</p>
+            </div>
+        </div>
+        <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#myCollapse">
+                show detail
+            </button>
+        </p>
+        <div class="collapse" id="myCollapse">
+            <div class="card card-body">more information</div>
+        </div>
+
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalDialog">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModalDialog" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myModalDialog">Wow</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            amazing
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button class="btn btn-primary">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

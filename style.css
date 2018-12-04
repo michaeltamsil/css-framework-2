@@ -1,0 +1,6 @@
+.container {
+    border: 1px solid black;
+}
+[class^=col-]{
+    border: 1px solid grey;
+}
